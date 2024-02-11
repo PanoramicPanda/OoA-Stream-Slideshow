@@ -15,8 +15,7 @@ class StatGrabber {
 
     // perform a get request to a url with the character id as part of the url. It will return a json object
     getCharacter() {
-        // let apiUrl = `/api/${this.characterId}`;
-        let apiUrl = `https://character-service.dndbeyond.com/character/v3/character/${this.characterId}`;
+        let apiUrl = `/api/${this.characterId}`;
         let response
         try {
             return fetch(apiUrl);
