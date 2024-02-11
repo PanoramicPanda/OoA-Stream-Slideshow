@@ -1,0 +1,133 @@
+@keyframes tinyWaveAnimation {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 50px 0; /* Adjust for desired speed and direction */
+    }
+}
+
+
+:root{
+    --bubble_1_height: 174px;
+    --bubble_2_height: 129px;
+    --bubble_3_height: 98px;
+}
+
+.str {
+    top: var(--bubble_1_height);
+    left: 116px;
+}
+
+.dex {
+    top: var(--bubble_2_height);
+    left: 153px;
+}
+
+.con {
+    top: var(--bubble_3_height);
+    left: 210px;
+}
+
+.int {
+    top: var(--bubble_3_height);
+    left: 275px;
+}
+
+.wis {
+    top: var(--bubble_2_height);
+    left: 332px;
+}
+
+.cha {
+    top: var(--bubble_1_height);
+    left: 371px;
+}
+
+.level {
+    top: 338px;
+    left: 415px;
+}
+
+.curr-hp {
+    top: 164px;
+    left: 25px;
+}
+
+.max-hp {
+    top: 0px;
+    left: 0px;
+    display: none;
+}
+
+.ac {
+    top: 160px;
+    left: 460px;
+}
+
+.cardimg{
+    position: absolute;
+    z-index: 5;
+}
+
+.health-bar {
+    position: absolute;
+    width: 80px; /* Specific width */
+    max-height: 61px;
+    background-color: #c66e70;
+    top: 166px;
+    left: 13px;
+    z-index: 2; /* Behind the image */
+    overflow: hidden;
+    /* Tiny wave effect */
+    background: repeating-linear-gradient(
+            135deg,
+            #c66e70,
+            #c66e70 5px, /* Wave color */
+            #d07c7c 5px, /* Slightly lighter shade for the wave peak */
+            #d07c7c 10px /* Adjust the size of one wave cycle */
+    );
+    animation: tinyWaveAnimation 6s linear infinite;
+}
+
+.temp-hp {
+    background-color: #6ec3c6;
+    /* Tiny wave effect */
+    background: repeating-linear-gradient(
+            135deg,
+            #6ec3c6,
+            #6ec3c6 5px, /* Wave color */
+            #5facb2 5px, /* Slightly lighter shade for the wave peak */
+            #5facb2 10px /* Adjust the size of one wave cycle */
+    );
+    animation: tinyWaveAnimation 6s linear infinite;
+}
+
+.white-box{
+    position: absolute;
+    height: 61px;
+    width: 80px; /* Specific width */
+    max-height: 61px;
+    background-color: white;
+    top: 166px;
+    left: 13px;
+    z-index: 1; /* Behind the image */
+}
+
+
+p{
+    font-family: "OptimusPrincepsSemiBold";
+    font-weight: 900;
+    color: black;
+    margin: 0 auto;
+}
+
+.stat{
+    position: absolute;
+    font-size: 44px;
+    z-index: 11;
+    width: 50px;
+    height: 50px;
+    /*border: 1px solid black;*/
+    text-align: center;
+}

@@ -1,0 +1,14 @@
+.slide {
+    visibility: hidden; /* Hide all slides initially, but keep them in the document flow */
+    opacity: 0; /* Start with 0 opacity for a fade-out effect */
+    transition: visibility 0s 2s, opacity 1s ease-in-out; /* Apply transition to opacity and delay hiding */
+    position: absolute; /* Position slides absolutely to stack them */
+    top: 0;
+    left: 0;
+}
+
+.slide.active {
+    visibility: visible; /* Make the active slide visible */
+    opacity: 1; /* Fade in the active slide */
+    transition: opacity 2s ease-in-out; /* Apply transition to opacity */
+}
