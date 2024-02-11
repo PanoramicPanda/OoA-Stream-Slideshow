@@ -35,6 +35,5 @@ const renderDev = () => {
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
       {renderDev()}
-      {console.log('Hello, world!')}
   </React.StrictMode>,
 )
