@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:character": "set VITE_RENDER_MODE=character&& vite",
+    "dev:slideshow": "set VITE_RENDER_MODE=slideshow&& vite",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
