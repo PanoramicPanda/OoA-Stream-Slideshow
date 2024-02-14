@@ -11,7 +11,7 @@
 :root{
     --bubble_1_height: 174px;
     --bubble_2_height: 129px;
-    --bubble_3_height: 98px;
+    --bubble_3_height: 101px;
 }
 
 .str {
@@ -41,17 +41,17 @@
 
 .cha {
     top: var(--bubble_1_height);
-    left: 371px;
+    left: 368px;
 }
 
 .level {
-    top: 338px;
-    left: 415px;
+    top: 250px;
+    left: 460px;
 }
 
 .curr-hp {
-    top: 164px;
-    left: 25px;
+    top: 161px;
+    left: 26px;
 }
 
 .max-hp {
@@ -61,7 +61,7 @@
 }
 
 .ac {
-    top: 160px;
+    top: 161px;
     left: 460px;
 }
 
